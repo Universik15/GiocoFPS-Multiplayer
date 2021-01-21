@@ -250,8 +250,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 302059806963474972}
   speed: 12
-  gravity: -9.8
-  jumpHeight: 3
+  gravity: -50
+  jumpHeight: 2.5
   groundCheck: {fileID: 302059807428434673}
   groundDistance: 0.4
   groundMask:
@@ -294,6 +294,8 @@ MonoBehaviour:
   - {fileID: 302059806916331590}
   - {fileID: 3658511499618374545}
   remoteLayerName: RemotePlayer
+  playerUIPrefab: {fileID: 372441351466665340, guid: 2009518561e9b254cb652a1c7da7c3ac,
+    type: 3}
 --- !u!136 &-8723547627682210686
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -347,7 +349,7 @@ MonoBehaviour:
   cam: {fileID: 302059806916331591}
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1335
 --- !u!114 &-7985496203909763789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +362,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0340e2d3ea5884283b81532493f021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  maxHealth: 100
+  disableOnDeath:
+  - {fileID: 302059806963474974}
+  - {fileID: 302059806916331585}
+  - {fileID: 3658511499618374545}
 --- !u!1 &302059807428434672
 GameObject:
   m_ObjectHideFlags: 0
